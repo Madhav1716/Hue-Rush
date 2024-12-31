@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+  background-color: #fde2e4; /* Pastel pink background */
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 36px;
+  margin-top: 20px;
+  color: #444;
+}
+p {
+  margin: 10px;
+  font-size: 18px;
+}
+
+/* Color Name */
+#color-name {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Buttons */
+.color-button {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+.color-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Darker Colors */
+#red {
+  background-color: #d90429; /* Dark red */
+}
+#blue {
+  background-color: #023e8a; /* Dark blue */
+}
+#green {
+  background-color: #2a9d8f; /* Dark green */
+}
+
+/* Score and Timer */
+#score {
+  font-size: 20px;
+  margin: 15px;
+  font-weight: bold;
+  color: #333;
+}
+#timer {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Container for Buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Game Over Modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+.modal h2 {
+  margin-bottom: 10px;
+}
+.modal button {
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.modal button:hover {
+  background: #495057;
+}
+
+/* Fade-in and Fade-out Animation */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}
